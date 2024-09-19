@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Star Wars';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.cdnfonts.com/s/88396/Star Wars.woff') format('woff');
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+  background-image: url("https://cdn.wallpapersafari.com/1/97/co341S.jpg"); 
+  color: white;
+  font-family: 'Star Wars', serif;
+}
+
+.form input[type="number"] {
+  width: 200px;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+#head{
+  text-align: center; 
+  border-radius: 12px;
+}
+.game {
+  border-radius : 16px;
+  border: 2px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  border-radius: 24;
+  opacity: 1;
+}
+
+.reset {
+  align-content: center;
+  text-align: center;
+}
+
+.conteiner {
+  margin-top : 20px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+} 
+  
+.form {
+  text-align : center;
+}  
+
+.newG {
+  text-align : center;
+} 
+  
+.resultParas {
+  text-align: center;
+}
+
+#guessSubmit{
+  margin-top: 10px;
+}
+
+button {
+  background-color : #fff833;
+}
+.content {
+  color : yellow;
+}
+
+.guessesL {
+  margin-top: 20px;
+}
+
+.guesses {
+  margin-top: 0px;
+}
+
+.guessField {
+  border-radius: 12px;
+}
