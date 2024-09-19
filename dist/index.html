@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Phantom Grail --ver beta 1.5.1</title>
+	<meta charset="utf-8">
+	<style>
+		* {
+			margin: 0;
+		}
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			overflow: none; /* overflow: hidden > tira o debug output*/
+		}
+		canvas {
+			display: block;
+		}
+
+		.test {
+			display: flex;
+			justify-content: center;
+		}
+		
+		.test p {
+			font-size : 21px;	
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="test">
+		<p id="ver-test">Debug Output</p>
+	</div>
+	<canvas class="game">
+		<script src="/dist/helper.js"></script>
+<script src="/dist/game.js"></script>
+
+	</canvas>
+</body>
+
+</html>
