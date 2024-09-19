@@ -1,0 +1,62 @@
+
+/*
+* {
+  padding: 0;
+}  
+*/
+
+html {
+  padding: 0;
+} 
+  
+body {
+  margin: 0;
+  font: 14px "Monospace", Arial, sans-serif;
+  background-color: black;
+}
+
+.container-fluid {
+  background-color: black;
+  color: aliceblue;
+  font: 14px "Monospace", Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: blue;
+}
+
+.header .col {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  padding: 10px;
+  color: aliceblue
+}
+
+.header a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.content p{
+  margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	color: aliceblue;
+}
+
+.content .game{
+	margin-top: 10vh;
+	margin-left: 41vw;
+	color: aliceblue;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+	}

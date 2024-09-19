@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" href="/css/login.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">		
+	<title>signup</title>
+</head>
+
+<body>		 
+	<!-- Container -->
+	<div class="container-fluid">
+
+		<%- include('../partials/header')  %>	
+		<div class="form-login">
+			<div class="row">
+				<form id="contact" action=<%=action%> method="post">
+					
+					<div class="col-7" id="col-form">
+
+						<% if (typeof contact === 'undefined') {
+							contact = {
+							name : "",
+							email: "",
+							pass: "",
+							}
+						} %> 
+						<fieldset>
+							<label>Username</label> <br>
+							<input class="form-control" placeholder="Nome de Usuário" name="username" value="<%= typeof contact.name !== 'undefined' ? contact.name : 'Nome' %>" type="text" tabindex="1" required autofocus>
+						</fieldset>
+						<fieldset>
+							<label>Email</label> <br>
+							<input class="form-control" placeholder="name@examplo.com" name="email" value="<%= typeof contact.email !== 'undefined' ? contact.email : 'Email' %>" type="email" tabindex="2" required>
+						</fieldset>
+						<fieldset>
+							<label>Password</label> <br>
+							<input class="form-control" placeholder="Senha" name="pass" value="<%= typeof contact.pass !== 'undefined' ? contact.pass : 'Password' %>" type="password" tabindex="3" required>
+						</fieldset>
+						<br>
+						<fieldset>
+							<div class="subm-button">
+								<button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="btn btn-primary btn-block mb-6">Sign in</button>
+							</div>
+						</fieldset>
+					</div> <!-- col -->
+
+					<div class="col">
+						b
+					</div> <!-- col -->
+	
+				</form>
+			</div> <!-- row -->
+		</div> <!-- form-login-->
+
+		</%- include('../partials/footer') %>
+
+	</div> <!-- Container -->
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

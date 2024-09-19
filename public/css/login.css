@@ -1,0 +1,48 @@
+
+
+
+
+.form-login {
+  background-color: #383838;
+  border-radius: 8px;
+  padding: 2px;
+  margin-top: 15vw;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.form-login .row {
+  
+}
+
+#col-form {
+  
+}
+
+.form-login a {
+  text-decoration: none;
+  color: #7d7dca
+	display: flex;
+	justify-content: center;
+}
+
+form {
+  margin-left: 15px
+}
+
+.subm-button {
+  display: flex;
+  justify-content: center;
+	margin-left: 10vw
+  margin-top: 100px;
+}
+
+.subm-button button {
+  padding-left: 70px;
+  padding-right: 70px;
+}
